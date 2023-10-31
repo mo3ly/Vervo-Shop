@@ -10,6 +10,9 @@ import Search from "@/components/shop/search";
 
 import { Metadata } from "next";
 
+// export const revalidate = 1;
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Shop",
   description: "Shop.",

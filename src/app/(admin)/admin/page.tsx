@@ -8,6 +8,9 @@ import { db } from "@/lib/db";
 import ProductTable from "./_components/ProductTable";
 import CategoriesModal from "./_components/CategoriesModal";
 
+// export const revalidate = 1;
+export const dynamic = "force-dynamic";
+
 async function getCategories() {
   return await db.category.findMany({
     select: { id: true, name: true, image: true },
